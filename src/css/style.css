@@ -1,0 +1,102 @@
+.chat { 
+  position: absolute;
+  padding: 10px;
+  width: calc(100% - 20px);
+  height: calc(100% - 75px);
+  scroll-behavior: unset;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.controls { 
+  width: calc(100% - 20px);
+  height: 35px;
+  background: rgb(24, 24, 30);
+  display: flex; 
+  padding: 10px; 
+  position: fixed;
+  bottom: 0px;
+  gap: 10px; 
+}
+
+.controls input { 
+  flex-grow: 1;
+  padding: 10px;
+  outline: none;
+  border: 2px solid rgb(40, 40, 80);
+  border-radius: 10px;
+  color: rgb(200, 200, 200);
+  background-color: rgb(26, 26, 32);
+}
+
+.controls input:focus{
+  color: rgb(200, 200, 200);
+  background: rgb(30, 30, 36);
+  border-color: rgb(120, 120, 255);
+}
+
+.controls button {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgb(80, 80, 160);
+  transition: 0.2s;
+}
+
+.controls button:hover {
+  color: rgb(255, 255, 255);
+  background: rgb(120, 120, 255);
+  cursor: pointer;
+}
+
+p { 
+  margin: 5px 0;
+}
+
+.self span{ 
+  color: rgb(120, 120, 255);
+}
+
+.other span{ 
+  color: rgb(80, 80, 160);
+}
+
+.link-style {
+  color: rgb(150, 150, 255);
+}
+
+.link-style:hover {
+  text-decoration: underline;
+  color: rgb(120, 120, 255);
+}
+
+.login {
+  position: fixed;
+  z-index: 999;
+  top: 20px;
+  right: 20px;
+}
+
+.login img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.login span {
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+/*.login a {
+  background-color: rgb(80, 80, 160);
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.login a:hover {
+  background-color: rgb(120, 120, 255);
+}*/
